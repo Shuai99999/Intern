@@ -3,10 +3,9 @@ import { Code2 } from "lucide-react";
 
 const codeProjects = [
   {
-    title: "Contact Manager MVC",
-    url: "https://github.com/Shuai99999/ContactManagerMVC",
-    description:
-      "Contact management web app built with ASP.NET Core MVC, Entity Framework Core, and SQL Server.",
+    title: "The MatchUp Sports App",
+    url: "https://www.tiktok.com/@gaoshuai099/video/7614005190823365909",
+    description: "A Local Sports Activity & Club Management Platform.",
   },
   {
     title: "EverMotion Trading",
