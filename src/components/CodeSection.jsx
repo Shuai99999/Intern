@@ -14,10 +14,11 @@ const codeProjects = [
       "Cross-border e-commerce site built with MongoDB, Express, and React (MERN stack).",
   },
   {
-    title: "SHELFIE_APP",
-    url: "https://github.com/Shuai99999/SHELFIE_APP",
+    title: "Denture Flow Platform",
+    url: "https://github.com/Shuai99999/HDC-Denture-Flow-Platform",
+    demoUrl: "https://www.tiktok.com/@gaoshuai099/video/7614005190823365909",
     description:
-      "Mobile app built with React Native (Expo); backend powered by Appwrite.",
+      "C# .NET full-stack platform built with Blazor and Bootstrap, featuring AI-assisted voice/text input to structured forms for faster and more accurate order processing.",
   },
 ];
 
@@ -30,7 +31,7 @@ export default function CodeSection() {
           Code
         </h2>
         <ul className="space-y-6">
-          {codeProjects.map(({ title, url, description }) => (
+          {codeProjects.map(({ title, url, demoUrl, description }) => (
             <li key={url}>
               <a
                 href={url}
@@ -40,6 +41,19 @@ export default function CodeSection() {
               >
                 {title}
               </a>
+              {demoUrl && (
+                <p className="text-gray-600 text-sm mt-0.5">
+                  Demo Video:{" "}
+                  <a
+                    href={demoUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-cyan-700 underline hover:text-cyan-800 decoration-cyan-600"
+                  >
+                    TikTok
+                  </a>
+                </p>
+              )}
               <p className="text-gray-600 text-sm mt-0.5">{description}</p>
             </li>
           ))}
