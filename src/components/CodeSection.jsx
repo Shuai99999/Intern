@@ -4,12 +4,14 @@ import { Code2 } from "lucide-react";
 const codeProjects = [
   {
     title: "The MatchUp Sports App",
-    url: "https://www.tiktok.com/@gaoshuai099/video/7614005190823365909",
+    url: "https://github.com/Shuai99999/MatchUpSports",
+    demoUrl: "https://www.tiktok.com/@gaoshuai099/video/7614005190823365909",
     description: "A Local Sports Activity & Club Management Platform.",
   },
   {
     title: "EverMotion Trading",
-    url: "https://evermotion.ca/",
+    url: "https://github.com/Shuai99999/GlobalBusinessWebWithSupabase",
+    siteUrl: "https://evermotion.ca/",
     description:
       "Cross-border e-commerce site built with MongoDB, Express, and React (MERN stack).",
   },
@@ -31,7 +33,7 @@ export default function CodeSection() {
           Code
         </h2>
         <ul className="space-y-6">
-          {codeProjects.map(({ title, url, demoUrl, description }) => (
+          {codeProjects.map(({ title, url, demoUrl, siteUrl, description }) => (
             <li key={url}>
               <a
                 href={url}
@@ -51,6 +53,19 @@ export default function CodeSection() {
                     className="text-cyan-700 underline hover:text-cyan-800 decoration-cyan-600"
                   >
                     TikTok
+                  </a>
+                </p>
+              )}
+              {siteUrl && (
+                <p className="text-gray-600 text-sm mt-0.5">
+                  Website:{" "}
+                  <a
+                    href={siteUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-cyan-700 underline hover:text-cyan-800 decoration-cyan-600"
+                  >
+                    Live Site
                   </a>
                 </p>
               )}
